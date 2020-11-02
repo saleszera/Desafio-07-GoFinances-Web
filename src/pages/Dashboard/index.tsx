@@ -127,7 +127,7 @@ const Dashboard: React.FC = () => {
                     <td>
                       {transaction.category
                         ? transaction.category.title
-                        : 'Sem Categoria'}
+                        : 'Others'}
                     </td>
                     <td>{transaction.formattedDate}</td>
                   </tr>
