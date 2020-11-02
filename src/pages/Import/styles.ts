@@ -1,9 +1,5 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { shade } from 'polished';
-
-interface ButtonProps {
-  buttonStatus: boolean;
-}
 
 export const Container = styled.div`
   width: 100%;
@@ -27,7 +23,7 @@ export const ImportFileContainer = styled.section`
   padding: 64px;
 `;
 
-export const Footer = styled.section<ButtonProps>`
+export const Footer = styled.section`
   margin-top: 36px;
   display: flex;
   align-items: center;
@@ -45,31 +41,25 @@ export const Footer = styled.section<ButtonProps>`
     }
   }
 
-  ${({ buttonStatus }) =>
-    !buttonStatus
-      ? css`
-          button:disabled,
-          button[disabled] {
-            cursor: not-allowed;
-            background: #cccccc;
-            color: #fff;
-            border-radius: 5px;
-            padding: 15px 80px;
-            border: 0;
-          }
-        `
-      : css`
-          button {
-            background: #ff872c;
-            color: #fff;
-            border-radius: 5px;
-            padding: 15px 80px;
-            border: 0;
-            transition: background-color 0.2s;
+  button {
+    background: #ff872c;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 80px;
+    border: 0;
+    transition: background-color 0.2s;
 
-            &:hover {
-              background: ${shade(0.2, '#ff872c')};
-            }
-          }
-        `}
+    &:hover {
+      background: ${shade(0.2, '#ff872c')};
+    }
+
+    :disabled {
+      cursor: not-allowed;
+      background: #cccccc;
+      color: #fff;
+      border-radius: 5px;
+      padding: 15px 80px;
+      border: 0;
+    }
+  }
 `;

@@ -11,6 +11,35 @@ export const Container = styled.div`
   padding: 40px 20px;
 `;
 
+export const EmptyContainer = styled.section`
+  background: #fff;
+  margin-top: 40px;
+  border-radius: 5px;
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 22px;
+    color: #363f5f;
+    line-height: 56px;
+  }
+  span {
+    font-size: 16px;
+    color: #3a3a3a;
+  }
+`;
+
 export const Title = styled.h1`
   font-size: 48px;
   color: #3a3a3a;

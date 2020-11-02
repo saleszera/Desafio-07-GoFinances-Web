@@ -20,7 +20,7 @@ interface FileProps {
 
 const Import: React.FC = () => {
   const [uploadedFiles, setUploadedFiles] = useState<FileProps[]>([]);
-  const [buttonStatus, setButtonStatus] = useState(false);
+  const [buttonStatus, setButtonStatus] = useState(true);
   const history = useHistory();
 
   async function handleUpload(): Promise<void> {
@@ -47,7 +47,7 @@ const Import: React.FC = () => {
     }));
 
     setUploadedFiles(upload);
-    setButtonStatus(true);
+    setButtonStatus(false);
   }
 
   return (
@@ -59,12 +59,16 @@ const Import: React.FC = () => {
           <Upload onUpload={submitFile} />
           {!!uploadedFiles.length && <FileList files={uploadedFiles} />}
 
-          <Footer buttonStatus={buttonStatus}>
+          <Footer>
             <p>
               <img src={alert} alt="Alert" />
               Permitido apenas arquivos CSV
             </p>
-            <button onClick={handleUpload} type="button" disabled>
+            <button
+              onClick={handleUpload}
+              type="button"
+              disabled={buttonStatus}
+            >
               Enviar
             </button>
           </Footer>
