@@ -146,7 +146,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Fontes: **[Poppins](https://fonts.google.com/specimen/Poppins)**
 
 ---
-### Captura de tela
+### 🎥️ Captura de tela
   <div align="center">
 	  <img src="https://media.giphy.com/media/o5qBVilWLo0tFknCDp/giphy.gif" alt="Funcionamento"/>
   </div>
