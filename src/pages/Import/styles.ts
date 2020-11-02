@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { shade } from 'polished';
 
 interface ButtonProps {
-  activeButton: boolean;
+  buttonStatus: boolean;
 }
 
 export const Container = styled.div`
@@ -45,8 +45,8 @@ export const Footer = styled.section<ButtonProps>`
     }
   }
 
-  ${({ activeButton }) =>
-    !activeButton
+  ${({ buttonStatus }) =>
+    !buttonStatus
       ? css`
           button:disabled,
           button[disabled] {
