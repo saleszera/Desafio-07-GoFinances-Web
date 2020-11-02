@@ -10,13 +10,13 @@
 
 <a  href="#-sobre-o-projeto">Sobre</a> •
 
-<a  href="#%EF%B8%8F-funcionalidades">Funcionalidades</a> •
+<a  href="#-funcionalidades">Funcionalidades</a> •
 
 <a  href="#-como-executar-o-projeto">Como executar</a> •
 
 <a  href="#-tecnologias">Tecnologias</a> •
 
-<a  href="#%EF%B8%8F-captura-de-tela">Captura de tela</a> •
+<a  href="#-captura-de-tela">Captura de tela</a> •
 
 </p>
 
@@ -105,6 +105,7 @@ $ yarn start
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
 ```
+O arquivo para import deve seguir o seguinte **[modelo](https://github.com/rocketseat-education/bootcamp-gostack-desafios/blob/master/desafio-database-upload/assets/file.csv)**
 
 
 ---
